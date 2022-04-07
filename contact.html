@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery -->
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+  </script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="resetstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/da74810f11.js" crossorigin="anonymous"></script>
+  <title>| David Develops |</title>
+  <link rel="shortcut icon" href="img/D.png">
+</head>
+  <body>
+    <header id="contact-bottom-border">
+      <a href="index.html" class="header-brand">Web-Dev Portfolio</a>
+      <nav>
+        <ul>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contact-container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>GET IN TOUCH</h3>
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Your E-mail" required>
+          <input type="text" id="phone" placeholder="Phone No.">
+          <textarea id="message" rows="4" placeholder="Leave your message here."></textarea>
+          <button type="submit">Submit</button>
+
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      &copy; DavidDevelops2022
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
